@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html" line="36" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1af5a045-9df3-4bdc-81a2-0a29384b55f4" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="resanet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="appResanet.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/appResanet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="226" column="33" lean-forward="true" selection-start-line="226" selection-start-column="33" selection-end-line="226" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vuePersonnelAvecCarte.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+              <folding>
+                <element signature="e#1631#1638#1" expanded="true" />
+                <element signature="e#3078#3085#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resanet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/static/css/resanet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vuePersonnelSansCarte.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelSansCarte.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+              <folding>
+                <element signature="e#1341#1348#1" expanded="true" />
+                <element signature="e#2788#2795#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>alert alert-danger</find>
+      <find>col-md-1</find>
+      <find>row</find>
+      <find>col-md-8</find>
+      <find>alert-danger</find>
+      <find>alert</find>
+      <find>numJourAujourdhui</find>
+      <find>dates</find>
+      <find>col-md-4</find>
+      <find>lesDates</find>
+      <find>uneDate</find>
+      <find>uneDateISO</find>
+      <find>/usager/seConnecter</find>
+      <find>/usager/reservations/lister</find>
+      <find>btn</find>
+      <find>a</find>
+      <find>button</find>
+      <find>btn-xs</find>
+      <find>xs</find>
+      <find>btn-</find>
+      <find>echecConnexion</find>
+      <find>sec</find>
+      <find>creer</find>
+      <find>getPersonnelSansCarteCreerCompte</find>
+      <find>modal</find>
+      <find>cred</find>
+      <find>get</find>
+      <find>form-group</find>
+      <find>close</find>
+      <find>PersonnelCrediterCarte</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Application/templates</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BD/resanet.sql" />
+        <option value="$PROJECT_DIR$/Application/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/Application/templates/vueListe----.html" />
+        <option value="$PROJECT_DIR$/Application/templates/vueConnexionGestionnaire.html" />
+        <option value="$PROJECT_DIR$/Application/templates/vueListeReservations.html" />
+        <option value="$PROJECT_DIR$/Application/technique/datesResanet.py" />
+        <option value="$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html" />
+        <option value="$PROJECT_DIR$/Application/templates/vueConnexionUsager.html" />
+        <option value="$PROJECT_DIR$/Application/templates/vuePersonnelSansCarteCreerCompte.html" />
+        <option value="$PROJECT_DIR$/Application/modeles/modeleResanet.py" />
+        <option value="$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarteCrediterCompte.html" />
+        <option value="$PROJECT_DIR$/Application/appResanet.py" />
+        <option value="$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html" />
+        <option value="$PROJECT_DIR$/Application/templates/vuePersonnelSansCarte.html" />
+        <option value="$PROJECT_DIR$/Application/static/css/resanet.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
+    <option name="y" value="31" />
+    <option name="width" value="1362" />
+    <option name="height" value="692" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technique" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modeles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resanet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".vscode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Application/templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.modeleResanet">
+    <configuration default="false" name="modeleResanet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Application/modeles" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="resanet" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Application/modeles/modeleResanet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="resanet" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="resanet" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="resanet" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="resanet" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="resanet" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.modeleResanet" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.modeleResanet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1af5a045-9df3-4bdc-81a2-0a29384b55f4" name="Default" comment="" />
+      <created>1611506280414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611506280414</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="31" width="1362" height="692" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34044117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989899" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/technique/datesResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/appResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="259" column="62" lean-forward="false" selection-start-line="259" selection-start-column="12" selection-end-line="259" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelSansCarteCreerCompte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="131" lean-forward="false" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="131" />
+          <folding>
+            <element signature="e#1631#1638#1" expanded="true" />
+            <element signature="e#3078#3085#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelSansCarte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1341#1348#1" expanded="true" />
+            <element signature="e#2788#2795#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueConnexionGestionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="10" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="37" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/modeles/modeleResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4284">
+          <caret line="253" column="42" lean-forward="true" selection-start-line="253" selection-start-column="42" selection-end-line="253" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarteCrediterCompte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="160" lean-forward="false" selection-start-line="18" selection-start-column="160" selection-end-line="18" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1631#1638#1" expanded="true" />
+            <element signature="e#3078#3085#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueAccueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/modeles/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueModificationMdp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/static/css/resanet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="22556" lean-forward="true" selection-start-line="4" selection-start-column="22556" selection-end-line="4" selection-end-column="22556" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteUsager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePied.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueListe----.html" />
+    <entry file="file://$PROJECT_DIR$/BD/resanet.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="124" column="65" lean-forward="false" selection-start-line="124" selection-start-column="65" selection-end-line="124" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueListeReservations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/appResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="151" column="48" lean-forward="true" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/technique/datesResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueConnexionGestionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/modeles/modeleResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="43" column="43" lean-forward="false" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueConnexionUsager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueAccueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/modeles/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePied.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueListe----.html" />
+    <entry file="file://$PROJECT_DIR$/BD/resanet.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="124" column="65" lean-forward="false" selection-start-line="124" selection-start-column="65" selection-end-line="124" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteAuthentification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteAccueil.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEntete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/technique/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteUsager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueListeReservations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarteCrediterCompte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/technique/datesResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueConnexionGestionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="37" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/modeles/modeleResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="279" column="37" lean-forward="false" selection-start-line="279" selection-start-column="37" selection-end-line="279" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelSansCarteCreerCompte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueModificationMdp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueConnexionUsager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/static/css/resanet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelSansCarte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="51" column="69" lean-forward="false" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+          <folding>
+            <element signature="e#1341#1348#1" expanded="true" />
+            <element signature="e#2788#2795#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+          <folding>
+            <element signature="e#1631#1638#1" expanded="true" />
+            <element signature="e#3078#3085#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/appResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="226" column="33" lean-forward="true" selection-start-line="226" selection-start-column="33" selection-end-line="226" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

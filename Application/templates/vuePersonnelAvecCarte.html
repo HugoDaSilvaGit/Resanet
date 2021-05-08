@@ -1,0 +1,113 @@
+{% include "vueEntete.html" %}
+{% include "vueEnteteGestionnaire.html" %}
+
+<div class="container-fluid">
+    <div class="row">
+		<div class="col-md-8"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+		<div class="row">
+			<table class="Tab">
+				<tr>
+					<td><h4>N° Carte</h4></td>
+					<td><h4>Etat</h4></td>
+					<td><h4>Solde</h4></td>
+					<td><h4>Matricule</h4></td>
+					<td><h4>Nom</h4></td>
+					<td><h4>Prénom</h4></td>
+					<td><h4>Service</h4></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				{% for personne in personnel %}
+				<tr>
+					<td>{{personne['matricule']}}</td>
+					<td>{{personne['activee']}}</td>
+					<td>{{personne['solde']}}</td>
+					<td>{{personne['matricule']}}</td>
+					<td>{{personne['nom']}}</td>
+					<td>{{personne['prenom']}}</td>
+					<td>{{personne['nomService']}}</td>
+					<td>
+						{% if personne['activee']== "Activée" %}
+						<button class="btn btn-success" data-toggle="modal" data-target="#modal1{{personne['matricule']}}"> Créditer </button>
+						<!-- Modal 1 -->
+                		<div class="modal fade" id="modal1{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                    		<div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel1"> Créditer </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Voulez vous créditer la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B> ?</p>
+                            		</div>
+                            		<div class="modal-footer">
+                                		<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-avec-carte/lister'">Annuler</button>
+                                		<button class="btn btn-success"  data-toggle="modal" data-target="#modal2{{personne['matricule']}}">Valider</button>
+                            		</div>
+                        		</div>
+                    		</div>
+                		</div>
+						<!-- Modal 2 -->
+                		<div class="modal fade" id="modal2{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                    		<div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel2"> Créditer </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Entrez la somme à crediter pour la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B> ?</p>
+                            		</div>
+                            		<div class="modal-footer">
+                                		<form role="form" action="/gestionnaire/personnel-avec-carte/crediter-carte/{{personne['matricule']}}" method="POST">
+                                    		<div class="form-group">
+                                        		<label for="somme">Somme à créditer</label>
+                                        		<input type="text" class="form-control" name="somme" id="somme" placeholder="Saisir le somme en €"/>
+                                    		</div>
+											<button class="btn btn-danger"  onclick=" location.href='/'">Annuler</button>
+											<button type="submit" class="btn btn-success">Créditer</button>
+                                		</form>
+                            		</div>
+                        		</div>
+                    		</div>
+                		</div>
+						{% else %}
+						{% endif %}
+					</td>
+					<td><button
+						{% if personne['activee']== "Activée" %}
+							class="btn btn-success"  onclick="location.href='/gestionnaire/personnel-avec-carte/bloquer-carte/{{personne['matricule']}}'"> Bloquer
+						{% else %}
+							class="btn btn-danger"  onclick="location.href='/gestionnaire/personnel-avec-carte/activer-carte/{{personne['matricule']}}'">  Activer
+						</button>
+						{% endif %}
+					</td>
+					<td>
+						{% if personne['activee']== "Activée" %}
+						<button class="btn btn-success"  onclick=" popup(), location.href='/gestionnaire/personnel-avec-carte/mdp/modification/appliquer/{{personne['matricule']}}'">Init. MDP</button>
+						{% else %}
+						{% endif %}
+					</td>
+					<script>
+						function popup() {
+							alert("Mot de passe réinitialiser");
+							}
+					</script>
+					<td>
+						<button class="btn btn-success"  onclick="location.href='#'">Historique</button>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	<div class="col-md-1"></div>
+</div>
+
+
+{% include "vuePied.html" %}

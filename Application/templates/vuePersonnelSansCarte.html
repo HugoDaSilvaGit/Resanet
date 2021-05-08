@@ -1,0 +1,73 @@
+{% include "vueEntete.html" %}
+{% include "vueEnteteGestionnaire.html" %}
+
+<div class="container-fluid">
+    <div class="row">
+		<div class="col-md-8"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+		<div class="row">
+			<table class="Tab-2">
+				<tr>
+					<td><h4>Matricule</h4></td>
+					<td><h4>Nom</h4></td>
+					<td><h4>Prénom</h4></td>
+					<td><h4>Service</h4></td>
+					<td></td>
+				</tr>
+				{% for personne in personnel %}
+				<tr>
+					<td>{{personne['matricule']}}</td>
+					<td>{{personne['nom']}}</td>
+					<td>{{personne['prenom']}}</td>
+					<td>{{personne['nomService']}}</td>
+					<td>
+						<button class="btn btn-success" data-toggle="modal" data-target="#modal1{{personne['matricule']}}"> Créer Carte </button>
+						<!-- Modal 1 -->
+                		<div class="modal fade" id="modal1{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                    		<div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel1"> Créditer </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Voulez vous créer la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B> ?</p>
+                            		</div>
+                            		<div class="modal-footer">
+                                		<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-sans-carte/lister'">Annuler</button>
+                                		<button class="btn btn-success"  data-toggle="modal" data-target="#modal2{{personne['matricule']}}">Valider</button>
+                            		</div>
+                        		</div>
+                    		</div>
+                		</div>
+						<!-- Modal 2 -->
+                		<div class="modal fade" id="modal2{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                    		<div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel2"> Créer Carte </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Quel status voulez-vous donner à la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B></B> de matricule <B> {{personne['matricule']}} ?</p>
+                            		</div>
+                            		<div class="modal-footer">
+                                		<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-sans-carte/creer-carte/bloquer/{{personne['matricule']}}'">Bloquer</button>
+                                		<button class="btn btn-success"  onclick=" location.href='/gestionnaire/personnel-sans-carte/creer-carte/activer/{{personne['matricule']}}'">Activer</button>
+                            		</div>
+                        		</div>
+                    		</div>
+                		</div>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	<div class="col-md-1"></div>
+</div>
+
+
+{% include "vuePied.html" %}
