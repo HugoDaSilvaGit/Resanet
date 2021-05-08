@@ -223,7 +223,7 @@ def activerPersonnelCreerCarte(numeroCarte):
     return redirect('/gestionnaire/personnel-sans-carte/lister')
 
 @app.route('/gestionnaire/personnel-avec-carte/crediter-carte/<numeroCarte>', methods=['POST'])
-def PersonnelCrediterCarte(numeroCarte):
+def personnelCrediterCarte(numeroCarte):
     somme = request.form['somme']
     modeleResanet.crediterCarte(numeroCarte, somme)
     return redirect('/gestionnaire/personnel-avec-carte/lister')
