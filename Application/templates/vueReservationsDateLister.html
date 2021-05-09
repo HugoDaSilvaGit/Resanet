@@ -1,0 +1,33 @@
+{% include "vueEntete.html" %}
+{% include "vueEnteteGestionnaire.html" %}
+
+<div class="container-fluid">
+    <div class="row">
+		<div class="col-md-8"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+		<div class="row">
+			<table class="Tab-2">
+				<tr>
+					<td><h4>Matricule</h4></td>
+					<td><h4>Nom</h4></td>
+					<td><h4>Prénom</h4></td>
+					<td><h4>Service</h4></td>
+				</tr>
+				{% for personne in reservations %}
+				<tr>
+					<td>{{personne['numeroCarte']}}</td>
+					<td>{{personne['nom']}}</td>
+					<td>{{personne['prenom']}}</td>
+					<td>{{personne['nomService']}}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	<div class="col-md-1"></div>
+</div>
+
+
+{% include "vuePied.html" %}

@@ -34,6 +34,7 @@ def seConnecterUsager():
                     session['nom'] = usager['nom']
                     session['prenom'] = usager['prenom']
                     session['mdp'] = mdp
+                    modeleResanet.setOldMdp(session['numeroCarte'])
 
                     return redirect('/usager/reservations/lister')
 
@@ -71,7 +72,7 @@ def listerReservations():
     datesPeriodeISO = datesResanet.getDatesPeriodeCouranteISO()
 
     datesResas = modeleResanet.getReservationsCarte(session['numeroCarte'], datesPeriodeISO[0], datesPeriodeISO[-1])
-
+    print(datesResas)
     dates = []
     for uneDateISO in datesPeriodeISO:
         uneDate = {}
@@ -130,18 +131,21 @@ def choisirModifierMdpUsager():
 def modifierMdpUsager():
     ancienMdp = request.form['ancienMDP']
     nouveauMdp = request.form['nouveauMDP']
-
+    oldMdp = modeleResanet.getOldMdp(session['numeroCarte'])
     soldeCarte = modeleResanet.getSolde(session['numeroCarte'])
     solde = '%.2f' % (soldeCarte,)
-
     if ancienMdp != session['mdp'] or nouveauMdp == '':
         return render_template('vueModificationMdp.html', laSession=session, leSolde=solde, modifMdp='Nok')
-
     else:
-        modeleResanet.modifierMdpUsager(session['numeroCarte'], nouveauMdp)
-        session['mdp'] = nouveauMdp
-        return render_template('vueModificationMdp.html', laSession=session, leSolde=solde, modifMdp='Ok')
-
+        if str(nouveauMdp) != str(oldMdp):
+            if str(nouveauMdp) != str(session['mdp']):
+                modeleResanet.modifierMdpUsager(session['numeroCarte'], nouveauMdp)
+                session['mdp'] = nouveauMdp
+                return render_template('vueModificationMdp.html', laSession=session, leSolde=solde, modifMdp='Ok')
+            else:
+                return render_template('vueModificationMdp.html', laSession=session, leSolde=solde, modifMdp='Same')
+        else:
+            return render_template('vueModificationMdp.html', laSession=session, leSolde=solde, modifMdp='Old')
 
 @app.route('/gestionnaire/session/choisir', methods=['GET'])
 def choisirSessionGestionnaire():
@@ -151,7 +155,6 @@ def choisirSessionGestionnaire():
 
 @app.route('/gestionnaire/seConnecter', methods=['POST'])
 def seConnecterGestionnaire():
-    # return('Traitement tentative connexion Gestionnaire')
     login = request.form['login']
     mdp = request.form['mdp']
 
@@ -162,7 +165,6 @@ def seConnecterGestionnaire():
             session['nom'] = gestionnaire['nom']
             session['prenom'] = gestionnaire['prenom']
             session['mdp'] = mdp
-            # return ("Connexion gestionnaire Ok")
             return redirect('/gestionnaire/personnel-avec-carte/lister')
         else:
             return render_template('vueConnexionGestionnaire.html', echecConnexion=True, saisieIncomplete=False)
@@ -228,7 +230,34 @@ def personnelCrediterCarte(numeroCarte):
     modeleResanet.crediterCarte(numeroCarte, somme)
     return redirect('/gestionnaire/personnel-avec-carte/lister')
 
+@app.route('/gestionnaire/reservations/date/lister/', methods=['POST'])
+def listerReservationsDate():
+    dateFR = request.form['date']
+    dateISO=datesResanet.convertirDateFRversISO(dateFR)
+    reservations = modeleResanet.getReservationsDate(dateISO)
+    return render_template('vueReservationsDateLister.html', laSession=session, reservations=reservations)
 
+@app.route('/gestionnaire/reservations/carte/lister/', methods=['POST'])
+def listerReservationsCarte():
+    numeroCarte = request.form['carte']
+    historiqueISO = modeleResanet.getHistoriqueReservationsCarte(numeroCarte)
+    personnel = modeleResanet.getInformationsCarte(numeroCarte)
+    historiqueFR = []
+    for uneDateISO in historiqueISO:
+        uneDateFR = datesResanet.convertirDateISOversFR(uneDateISO)
+        print(uneDateFR)
+        historiqueFR.append(uneDateFR)
+    return render_template('vueHistoriqueReservationsLister.html', laSession=session, historique=historiqueFR, personnel=personnel)
+
+@app.route('/gestionnaire/reservations/carte/lister/<numeroCarte>', methods=['GET'])
+def listerReservationsNumeroCarte(numeroCarte):
+    historiqueISO = modeleResanet.getHistoriqueReservationsCarte(numeroCarte)
+    personnel = modeleResanet.getInformationsCarte(numeroCarte)
+    historiqueFR = []
+    for uneDateISO in historiqueISO:
+        uneDateFR = datesResanet.convertirDateISOversFR(uneDateISO)
+        historiqueFR.append(uneDateFR)
+    return render_template('vueHistoriqueReservationsLister.html', laSession=session, historique=historiqueFR, personnel=personnel)
 
 
 if __name__ == '__main__':

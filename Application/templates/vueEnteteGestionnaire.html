@@ -11,7 +11,6 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="#">Réservations</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Personnels<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -27,10 +26,58 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Réservations<span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Réservations<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-					  <li><a href="#">Pour une date</a></li>
-					  <li><a href="#">Pour une carte</a></li>
+					   <li><a href="#"  data-toggle="modal" data-target="#modal1"> Pour une date </a></li>
+						  <!-- Modal date resa -->
+                		  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                    		 <div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel1"> Créditer </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Entrez <B> la date </B> pour consulter <B> les reservations</B>.</p>
+                            		</div>
+                            		<div class="modal-footer">
+                                		<form role="form" action="/gestionnaire/reservations/date/lister/" method="POST">
+                                    		<div class="form-group">
+                                        		<label for="date">Date</label>
+                                        		<input type="text" class="form-control" name="date" id="date" placeholder="Saisir la date au format JJ/MM/AAAA"/>
+                                    		</div>
+											<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-avec-carte/lister'">Annuler</button>
+											<button type="submit" class="btn btn-success">Valider</button>
+                                		</form>
+                            		</div>
+                        		</div>
+                    		 </div>
+						  </div>
+					   <li><a href="#" data-toggle="modal" data-target="#modal2">Pour une carte</a></li>
+						<!-- Modal carte resa -->
+                		  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                    		 <div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel2"> Créditer </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Entrez <B> le numéro de la carte </B> pour consulter <B> son historique de réservations</B>.</p>
+                            		</div>
+                            		<div class="modal-footer">
+                                		<form role="form" action="/gestionnaire/reservations/carte/lister/" method="POST">
+                                    		<div class="form-group">
+                                        		<label for="carte">Numéro de la carte</label>
+                                        		<input type="text" class="form-control" name="carte" id="carte" placeholder="Saisir le numéro de la carte"/>
+                                    		</div>
+											<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-avec-carte/lister'">Annuler</button>
+											<button type="submit" class="btn btn-success">Valider</button>
+                                		</form>
+                            		</div>
+                        		</div>
+                    		 </div>
+						  </div>
 					</ul>
 				</li>
 			</ul>

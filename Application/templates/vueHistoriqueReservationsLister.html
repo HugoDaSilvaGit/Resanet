@@ -1,0 +1,30 @@
+{% include "vueEntete.html" %}
+{% include "vueEnteteGestionnaire.html" %}
+
+<div class="container-fluid">
+    <div class="row">
+		<div class="col-md-8"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+		<div class="row">
+			<table class="Tab-2">
+				{% for personne in personnel %}
+				<h4>Dates de réservations de la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B>.</h4>
+				<tr>
+					<td><h4>Dates</h4></td>
+				</tr>
+				{% endfor %}
+				{% for date in historique %}
+				<tr>
+					<td>{{date}}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	<div class="col-md-1"></div>
+</div>
+
+
+{% include "vuePied.html" %}

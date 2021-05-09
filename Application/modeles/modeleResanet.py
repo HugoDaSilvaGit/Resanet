@@ -131,6 +131,47 @@ def getMdp( numeroCarte ):
 	except:
 		return None
 
+def getOldMdp( numeroCarte ):
+	try:
+		curseur = getConnexionBD().cursor()
+		requete = '''
+					select oldMdpCarte
+					from Carte
+					where numeroCarte = %s
+				'''
+
+		curseur.execute(requete , ( numeroCarte , ))
+		enregistrement = curseur.fetchone()
+
+		oldMdp = 'inconnu'
+		if enregistrement != None :
+			oldMdp = enregistrement[0]
+			curseur.close()
+		return oldMdp
+
+	except:
+		return None
+
+def setOldMdp( numeroCarte ):
+	try:
+		curseur = getConnexionBD().cursor()
+		requete = '''
+					update Carte
+					set oldMdpCarte = NULL
+					where numeroCarte = %s
+				'''
+
+		curseur.execute(requete , ( numeroCarte , ))
+		connexionBD.commit()
+		nbTuplesTraites = curseur.rowcount
+		curseur.close()
+
+		return nbTuplesTraites
+
+	except:
+		return None
+
+
 def getYear( numeroCarte ):
 	try:
 		curseur = getConnexionBD().cursor()
@@ -212,66 +253,6 @@ def getTarifRepas( numeroCarte ) :
 		print '[STOP] modeleResanet::getTarifRepas()'
 		return None
 
-def getPersonnelSansCarteCreerCompte( numeroCarte ):
-	try :
-		curseur = getConnexionBD().cursor()
-		requete = '''
-					select matricule, nom, prenom, nomService
-					from Service
-					inner join Personnel
-					on Service.idService = Personnel.idService
-					where matricule = %s
-				'''
-		curseur.execute( requete , ( numeroCarte , ) )
-
-		enregistrement = curseur.fetchall()
-
-		personnel = []
-		for unEnregistrement in enregistrement:
-			unPersonnel = {}
-			unPersonnel['matricule'] = unEnregistrement[0]
-			unPersonnel['nom'] = unEnregistrement[1]
-			unPersonnel['prenom'] = unEnregistrement[2]
-			unPersonnel['nomService'] = unEnregistrement[3]
-			personnel.append(unPersonnel)
-
-		curseur.close()
-		return personnel
-
-	except:
-		return None
-
-def getPersonnelAvecCarteCrediterCompte( numeroCarte ):
-	try :
-		curseur = getConnexionBD().cursor()
-		requete = '''
-					select c.matricule, nom, prenom, nomService
-					from Service as s
-					inner join Personnel as p
-					on s.idService = p.idService
-					inner join Carte as c
-					on c.matricule = p.matricule
-					where c.matricule = %s
-				'''
-		curseur.execute( requete , ( numeroCarte , ) )
-
-		enregistrement = curseur.fetchall()
-
-		personnel = []
-		for unEnregistrement in enregistrement:
-			unPersonnel = {}
-			unPersonnel['matricule'] = unEnregistrement[0]
-			unPersonnel['nom'] = unEnregistrement[1]
-			unPersonnel['prenom'] = unEnregistrement[2]
-			unPersonnel['nomService'] = unEnregistrement[3]
-			personnel.append(unPersonnel)
-
-		curseur.close()
-		return personnel
-
-	except:
-		return None
-
 
 def getPersonnelsSansCarte() :
 	try :
@@ -343,6 +324,34 @@ def getPersonnelsAvecCarte() :
 		
 	except :
 		return None
+
+
+def getInformationsCarte(numeroCarte):
+		curseur = getConnexionBD().cursor()
+		requete = '''
+					select matricule, nom , prenom , nomService
+					from Service
+					inner join Personnel
+					on Service.idService = Personnel.idService
+					where matricule = %s
+				'''
+
+		curseur.execute(requete, (numeroCarte))
+
+		informations = curseur.fetchall()
+
+		personnels = []
+		for uneInformation in informations:
+			unPersonnel = {}
+			unPersonnel['matricule'] = uneInformation[0]
+			unPersonnel['nom'] = uneInformation[1]
+			unPersonnel['prenom'] = uneInformation[2]
+			unPersonnel['nomService'] = uneInformation[3]
+			personnels.append(unPersonnel)
+
+		curseur.close()
+		return personnels
+
 
 
 def activerCarte( numeroCarte ) :
@@ -585,6 +594,7 @@ def getHistoriqueReservationsCarte( numeroCarte ) :
 
 	except:
 		return None
+
 
 	
 def getReservationsDate( dateResa ) :
