@@ -35,7 +35,7 @@
 					<td>
 						{% if personne['activee']== "Activée" %}
 						<button class="btn btn-success" data-toggle="modal" data-target="#modal3{{personne['matricule']}}"> Créditer </button>
-						<!-- Modal 1 -->
+						<!-- Modal 3 -->
                 		<div class="modal fade" id="modal3{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
                     		<div class="modal-dialog" role="document">
                         		<div class="modal-content">
@@ -53,7 +53,7 @@
                         		</div>
                     		</div>
                 		</div>
-						<!-- Modal 2 -->
+						<!-- Modal 4 -->
                 		<div class="modal fade" id="modal4{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel4" aria-hidden="true">
                     		<div class="modal-dialog" role="document">
                         		<div class="modal-content">
@@ -70,7 +70,7 @@
                                         		<label for="somme">Somme à créditer</label>
                                         		<input type="text" class="form-control" name="somme" id="somme" placeholder="Saisir le somme en €"/>
                                     		</div>
-											<button class="btn btn-danger"  onclick=" location.href='/'">Annuler</button>
+											<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-avec-carte/lister'">Annuler</button>
 											<button type="submit" class="btn btn-success">Créditer</button>
                                 		</form>
                             		</div>
@@ -90,15 +90,28 @@
 					</td>
 					<td>
 						{% if personne['activee']== "Activée" %}
-						<button class="btn btn-success"  onclick=" popup(), location.href='/gestionnaire/personnel-avec-carte/mdp/modification/appliquer/{{personne['matricule']}}'">Init. MDP</button>
+						<button class="btn btn-success" data-toggle="modal" data-target="#modal5{{personne['matricule']}}">Init. MDP</button>
+						<!-- Modal 5 -->
+                		<div class="modal fade" id="modal5{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
+                    		<div class="modal-dialog" role="document">
+                        		<div class="modal-content">
+                            		<div class="modal-header">
+                                		<h4 class="modal-title" id="ModalLabel5"> Créditer </h4>
+                                		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            		</div>
+                            		<div class="modal-body">
+										<p class="alert" role="alert">Voulez vous vraiment réinitialiser le mot de passe de la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B> ?</p>
+                            		</div>
+                            		<div class="modal-footer">
+										<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-avec-carte/lister'">Annuler</button>
+                                		<button class="btn btn-success" onclick=" location.href='/gestionnaire/personnel-avec-carte/mdp/modification/appliquer/{{personne['matricule']}}'">Valider</button>
+                            		</div>
+                        		</div>
+                    		</div>
+                		</div>
 						{% else %}
 						{% endif %}
 					</td>
-					<script>
-						function popup() {
-							alert("Mot de passe réinitialiser");
-							}
-					</script>
 					<td>
 						<button class="btn btn-success"  onclick="location.href='/gestionnaire/reservations/carte/lister/{{personne['matricule']}}'">Historique</button>
 					</td>

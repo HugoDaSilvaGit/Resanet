@@ -6,14 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af5a045-9df3-4bdc-81a2-0a29384b55f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/appResanet.py" afterPath="$PROJECT_DIR$/Application/appResanet.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/modeles/modeleResanet.py" afterPath="$PROJECT_DIR$/Application/modeles/modeleResanet.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/technique/datesResanet.py" afterPath="$PROJECT_DIR$/Application/technique/datesResanet.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/templates/vueHistoriqueReservationsLister.html" afterPath="$PROJECT_DIR$/Application/templates/vueHistoriqueReservationsLister.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/templates/vueListeReservations.html" afterPath="$PROJECT_DIR$/Application/templates/vueListeReservations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html" afterPath="$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html" afterPath="$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BD/resanet.sql" afterPath="$PROJECT_DIR$/BD/resanet.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,13 +84,13 @@
         <option value="$PROJECT_DIR$/Application/static/css/resanet.css" />
         <option value="$PROJECT_DIR$/Application/templates/vueModificationMdp.html" />
         <option value="$PROJECT_DIR$/Application/templates/vueHistoriqueReservations.html" />
-        <option value="$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html" />
-        <option value="$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html" />
         <option value="$PROJECT_DIR$/Application/templates/vueHistoriqueReservationsLister.html" />
         <option value="$PROJECT_DIR$/Application/modeles/modeleResanet.py" />
         <option value="$PROJECT_DIR$/Application/templates/vueListeReservations.html" />
         <option value="$PROJECT_DIR$/Application/technique/datesResanet.py" />
         <option value="$PROJECT_DIR$/Application/appResanet.py" />
+        <option value="$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html" />
+        <option value="$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html" />
       </list>
     </option>
   </component>
@@ -121,6 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,8 +267,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,7 +427,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="31" width="1362" height="692" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2389706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2389706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -520,7 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4284">
           <caret line="253" column="42" lean-forward="true" selection-start-line="253" selection-start-column="42" selection-end-line="253" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,27 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="43" column="105" lean-forward="false" selection-start-line="43" selection-start-column="105" selection-end-line="43" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/templates/vueHistoriqueReservationsLister.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="60" column="96" lean-forward="true" selection-start-line="60" selection-start-column="96" selection-end-line="60" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,15 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="204" column="36" lean-forward="true" selection-start-line="204" selection-start-column="36" selection-end-line="204" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/appResanet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,6 +803,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vuePersonnelAvecCarte.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="106" column="194" lean-forward="false" selection-start-line="106" selection-start-column="194" selection-end-line="106" selection-end-column="194" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/templates/vueEnteteGestionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="76" lean-forward="false" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/appResanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="186" column="0" lean-forward="true" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
           <folding />
         </state>
       </provider>
