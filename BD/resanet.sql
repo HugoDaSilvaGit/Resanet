@@ -50,6 +50,12 @@ create table Reservation (
 	primary key(dateResa,numeroCarte)
 ) ENGINE=InnoDB ;
 
+create table JoursFeries (
+	dateFeries date not null,
+	primary key(dateFeries)
+) ENGINE=InnoDB ;
+	
+
 insert into Fonction values(1,'Directeur',8.2) ;
 insert into Fonction values(2,'Cadre',7.3) ;
 insert into Fonction values(3,'Technicien',5.7) ;
@@ -126,3 +132,18 @@ insert into Carte(solde,dateCreation,activee,matricule) values(130.0,current_dat
 insert into Carte(solde,dateCreation,activee,matricule) values(42.0,current_date(),True,5) ;
 
 insert into Gestionnaire values('admin','azerty',5) ;
+
+insert into JoursFeries values('2021-01-01');
+insert into JoursFeries values('2021-05-01');
+insert into JoursFeries values('2021-05-08');
+insert into JoursFeries values('2021-07-14');
+insert into JoursFeries values('2021-08-15');
+insert into JoursFeries values('2021-11-01');
+insert into JoursFeries values('2021-11-11');
+insert into JoursFeries values('2021-12-25');
+insert into JoursFeries values('2021-05-12');
+insert into JoursFeries values('2021-05-13');
+
+
+
+

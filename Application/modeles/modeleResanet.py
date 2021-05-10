@@ -194,6 +194,53 @@ def getYear( numeroCarte ):
 	except:
 		return None
 
+def getJoursFeries():
+	try:
+		curseur = getConnexionBD().cursor()
+		requete = '''
+					select dateFeries
+					from JoursFeries
+				'''
+
+		curseur.execute(requete, ())
+
+		enregistrements = curseur.fetchall()
+
+		jours = []
+		for unEnregistrement in enregistrements:
+			uneDate = '%02d-%02d' % (unEnregistrement[0].month, unEnregistrement[0].day)
+
+			jours.append(uneDate)
+
+		curseur.close()
+		return jours
+
+	except:
+		return None
+
+	try :
+		curseur = getConnexionBD().cursor()
+		requete = '''
+					select jour
+					from joursFeries
+				'''
+
+		curseur.execute( requete , () )
+
+		enregistrements = curseur.fetchall()
+		jours = []
+		for unJour in enregistrements :
+			print int(unJour)
+			leJour = {}
+			leJour[ 'jour' ] = unJour[ 0 ]
+			jours.append( leJour )
+
+		curseur.close()
+		return jours
+
+	except :
+		return None
+
 def getSolde( numeroCarte ) :
 	print '[START] modeleResanet::getSolde()'
 	try :
@@ -340,17 +387,17 @@ def getInformationsCarte(numeroCarte):
 
 		informations = curseur.fetchall()
 
-		personnels = []
+		personnel = []
 		for uneInformation in informations:
 			unPersonnel = {}
 			unPersonnel['matricule'] = uneInformation[0]
 			unPersonnel['nom'] = uneInformation[1]
 			unPersonnel['prenom'] = uneInformation[2]
 			unPersonnel['nomService'] = uneInformation[3]
-			personnels.append(unPersonnel)
+			personnel.append(unPersonnel)
 
 		curseur.close()
-		return personnels
+		return personnel
 
 
 

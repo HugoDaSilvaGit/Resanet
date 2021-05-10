@@ -15,9 +15,8 @@
 				<div class="col-md-1">
 				
 					<a
-					
 						{% if lesDates[i]['reservee'] %}
-							href="/usager/reservations/annuler/{{ lesDates[i]['iso'] }}" 
+							href="/usager/reservations/annuler/{{ lesDates[i]['iso'] }}"
 							class="btn btn-success"
 						{% else %}
 							href="/usager/reservations/enregistrer/{{ lesDates[i]['iso'] }}"

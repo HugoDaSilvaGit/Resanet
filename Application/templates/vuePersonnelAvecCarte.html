@@ -34,13 +34,13 @@
 					<td>{{personne['nomService']}}</td>
 					<td>
 						{% if personne['activee']== "Activée" %}
-						<button class="btn btn-success" data-toggle="modal" data-target="#modal1{{personne['matricule']}}"> Créditer </button>
+						<button class="btn btn-success" data-toggle="modal" data-target="#modal3{{personne['matricule']}}"> Créditer </button>
 						<!-- Modal 1 -->
-                		<div class="modal fade" id="modal1{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+                		<div class="modal fade" id="modal3{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
                     		<div class="modal-dialog" role="document">
                         		<div class="modal-content">
                             		<div class="modal-header">
-                                		<h4 class="modal-title" id="ModalLabel1"> Créditer </h4>
+                                		<h4 class="modal-title" id="ModalLabel3"> Créditer </h4>
                                 		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             		</div>
                             		<div class="modal-body">
@@ -48,17 +48,17 @@
                             		</div>
                             		<div class="modal-footer">
                                 		<button class="btn btn-danger"  onclick=" location.href='/gestionnaire/personnel-avec-carte/lister'">Annuler</button>
-                                		<button class="btn btn-success"  data-toggle="modal" data-target="#modal2{{personne['matricule']}}">Valider</button>
+                                		<button class="btn btn-success"  data-toggle="modal" data-target="#modal4{{personne['matricule']}}">Valider</button>
                             		</div>
                         		</div>
                     		</div>
                 		</div>
 						<!-- Modal 2 -->
-                		<div class="modal fade" id="modal2{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                		<div class="modal fade" id="modal4{{personne['matricule']}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel4" aria-hidden="true">
                     		<div class="modal-dialog" role="document">
                         		<div class="modal-content">
                             		<div class="modal-header">
-                                		<h4 class="modal-title" id="ModalLabel2"> Créditer </h4>
+                                		<h4 class="modal-title" id="ModalLabel4"> Créditer </h4>
                                 		<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             		</div>
                             		<div class="modal-body">

@@ -11,11 +11,11 @@
 		<div class="row">
 			<table class="Tab-2">
 				{% for personne in personnel %}
-				<h4>Dates de réservations de la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B>.</h4>
+				<h4>Historique de réservations de la carte de <B> {{personne['nom']}} {{personne['prenom']}} </B> du service <B> {{personne['nomService']}} </B> de matricule <B> {{personne['matricule']}}</B>.</h4>
+				{% endfor %}
 				<tr>
 					<td><h4>Dates</h4></td>
 				</tr>
-				{% endfor %}
 				{% for date in historique %}
 				<tr>
 					<td>{{date}}</td>

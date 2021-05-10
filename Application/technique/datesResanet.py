@@ -23,6 +23,12 @@ def convertirDateVersNumeroSemaine( dateISO ):
     numeroSemaine = int(numeroSemaine.strftime("%w"))
     return numeroSemaine
 
+def convertirDateISOversFeries(dateISO):
+	print(dateISO)
+	annee, mois, jour = dateISO.split('-')
+	DateFeries= '-'.join( ( mois , jour ) )
+	return DateFeries
+
 def convertirDateVersJourSemaine( dateISO ):
     date = dateISO
     annee, mois, jour = (int(x) for x in dateISO.split('-'))

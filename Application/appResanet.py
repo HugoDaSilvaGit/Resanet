@@ -67,12 +67,13 @@ def listerReservations():
 
     solde = '%.2f' % (soldeCarte,)
 
+    joursFeries = modeleResanet.getJoursFeries()
+
     aujourdhui = datesResanet.getDateAujourdhuiISO()
 
     datesPeriodeISO = datesResanet.getDatesPeriodeCouranteISO()
 
     datesResas = modeleResanet.getReservationsCarte(session['numeroCarte'], datesPeriodeISO[0], datesPeriodeISO[-1])
-    print(datesResas)
     dates = []
     for uneDateISO in datesPeriodeISO:
         uneDate = {}
@@ -80,15 +81,21 @@ def listerReservations():
         uneDate['fr'] = datesResanet.convertirDateISOversFR(uneDateISO)
         uneDate['jour'] = datesResanet.convertirDateVersJourSemaine(uneDateISO)
 
-        if uneDateISO <= aujourdhui:
-            uneDate['verrouillee'] = True
-        else:
-            uneDate['verrouillee'] = False
+        laDate= datesResanet.convertirDateISOversFeries(uneDateISO)
+        print(laDate)
 
-        if uneDateISO in datesResas:
-            uneDate['reservee'] = True
+        if laDate not in joursFeries:
+            if uneDateISO <= aujourdhui:
+                uneDate['verrouillee'] = True
+            else:
+                uneDate['verrouillee'] = False
+
+            if uneDateISO in datesResas:
+                uneDate['reservee'] = True
+            else:
+                uneDate['reservee'] = False
         else:
-            uneDate['reservee'] = False
+            uneDate['verrouillee'] = True
 
         if soldeCarte < tarifRepas and uneDate['reservee'] == False:
             uneDate['verrouillee'] = True
@@ -101,8 +108,7 @@ def listerReservations():
         soldeInsuffisant = False
 
     print '[STOP] appResanet::listerReservations()'
-    return render_template('vueListeReservations.html', laSession=session, leSolde=solde, lesDates=dates,
-                           soldeInsuffisant=soldeInsuffisant)
+    return render_template('vueListeReservations.html', laSession=session, leSolde=solde, lesDates=dates, soldeInsuffisant=soldeInsuffisant)
 
 
 @app.route('/usager/reservations/annuler/<dateISO>', methods=['GET'])
@@ -250,7 +256,7 @@ def listerReservationsCarte():
     return render_template('vueHistoriqueReservationsLister.html', laSession=session, historique=historiqueFR, personnel=personnel)
 
 @app.route('/gestionnaire/reservations/carte/lister/<numeroCarte>', methods=['GET'])
-def listerReservationsNumeroCarte(numeroCarte):
+def listerHistoriqueNumeroCarte(numeroCarte):
     historiqueISO = modeleResanet.getHistoriqueReservationsCarte(numeroCarte)
     personnel = modeleResanet.getInformationsCarte(numeroCarte)
     historiqueFR = []
