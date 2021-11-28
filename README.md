@@ -5,7 +5,7 @@ Resanet is a web Ap using Flask framework and depending on Jinja template. This 
 
 **Before Use**
 
-credentials are necessary to connect, you can find credentials profils in the SQL file 
+credentials are necessary to connect, you can find credentials profils in the SQL file:
 ```Shell
 BD/resanet.sql
 ```
@@ -20,4 +20,4 @@ Full installation steps can be found here: https://mariadb.com/fr/resources/blog
 
 **About the project**
 
-Resanet was study project for during the 2020-2021 period
+Resanet was study project for during the 2020-2021 period.
