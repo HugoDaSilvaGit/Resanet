@@ -7,7 +7,7 @@ Resanet is a web Ap using Flask framework and depending on Jinja template. This 
 
 credentials are necessary to connect, you can find credentials profils in the SQL file:
 ```Shell
-BD/resanet.sql
+cd BD/resanet.sql
 ```
 
 **Prerequisites**
