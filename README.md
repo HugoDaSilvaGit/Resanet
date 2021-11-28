@@ -20,4 +20,4 @@ Full installation steps can be found here: https://mariadb.com/fr/resources/blog
 
 **About the project**
 
-Resanet was study project for during the 2020-2021 period.
+Resanet was a study project during my 2020-2021 study period.
