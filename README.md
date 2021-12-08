@@ -1,4 +1,4 @@
-## Resanet
+## Resanet [Flask]
 **Introduction**
 
 >Resanet is a web Ap using Flask framework and depending on Jinja template. This App is a meal reservation App for public catering, specifically school or internal company.
