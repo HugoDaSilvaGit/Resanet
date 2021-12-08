@@ -1,4 +1,9 @@
 ## Resanet [Flask]
+
+**Implementation**
+
+> `Continuous integration`
+
 **Introduction**
 
 >Resanet is a web Ap using Flask framework and depending on Jinja template. This App is a meal reservation App for public catering, specifically school or internal company.
@@ -16,6 +21,7 @@ cd BD/resanet.sql
 ```Shell
 $ pip3 install mariadb
 ```
+
 >Full installation steps can be found here: https://mariadb.com/fr/resources/blog/how-to-connect-python-programs-to-mariadb/
 
 **About the project**
